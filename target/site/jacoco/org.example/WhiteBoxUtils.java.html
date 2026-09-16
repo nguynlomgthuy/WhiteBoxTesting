@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WhiteBoxUtils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">WhiteBoxTesting</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">WhiteBoxUtils.java</span></div><h1>WhiteBoxUtils.java</h1><pre class="source lang-java linenums">package org.example;
+
+<span class="fc" id="L3">public class WhiteBoxUtils {</span>
+
+    // 1. Chu vi hình chữ nhật
+    public static double rectanglePerimeter(double length, double width) {
+<span class="fc bfc" id="L7" title="All 4 branches covered.">        if (length &lt; 0 || width &lt; 0) {</span>
+<span class="fc" id="L8">            throw new IllegalArgumentException(&quot;Length and width must be &gt;= 0&quot;);</span>
+        }
+<span class="fc" id="L10">        return 2 * (length + width);</span>
+    }
+
+    // 2. Diện tích hình chữ nhật
+    public static double rectangleArea(double length, double width) {
+<span class="fc bfc" id="L15" title="All 4 branches covered.">        if (length &lt; 0 || width &lt; 0) {</span>
+<span class="fc" id="L16">            throw new IllegalArgumentException(&quot;Length and width must be &gt;= 0&quot;);</span>
+        }
+<span class="fc" id="L18">        return length * width;</span>
+    }
+
+    // 3. Giải phương trình bậc 2
+    public static double[] solveQuadratic(double a, double b, double c) {
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        if (a == 0) {</span>
+<span class="fc" id="L24">            throw new IllegalArgumentException(&quot;a must be different from 0&quot;);</span>
+        }
+
+<span class="fc" id="L27">        double delta = b * b - 4 * a * c;</span>
+
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        if (delta &gt; 0) {</span>
+<span class="fc" id="L30">            double x1 = (-b + Math.sqrt(delta)) / (2 * a);</span>
+<span class="fc" id="L31">            double x2 = (-b - Math.sqrt(delta)) / (2 * a);</span>
+<span class="fc" id="L32">            return new double[]{x1, x2};</span>
+
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        } else if (delta == 0) {</span>
+<span class="fc" id="L35">            double x = -b / (2 * a);</span>
+<span class="fc" id="L36">            return new double[]{x};</span>
+
+        } else {
+<span class="fc" id="L39">            return new double[]{};</span>
+        }
+    }
+
+    // 4. Số ngày của tháng
+    public static int daysInMonth(int month, int year) {
+<span class="fc bfc" id="L45" title="All 4 branches covered.">        if (month &lt; 1 || month &gt; 12) {</span>
+<span class="fc" id="L46">            throw new IllegalArgumentException(&quot;Invalid month&quot;);</span>
+        }
+
+<span class="fc bfc" id="L49" title="All 3 branches covered.">        switch (month) {</span>
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+<span class="fc" id="L54">                return 30;</span>
+
+            case 2:
+<span class="fc bfc" id="L57" title="All 2 branches covered.">                if (isLeapYear(year)) {</span>
+<span class="fc" id="L58">                    return 29;</span>
+                }
+<span class="fc" id="L60">                return 28;</span>
+
+            default:
+<span class="fc" id="L63">                return 31;</span>
+        }
+    }
+
+    private static boolean isLeapYear(int year) {
+<span class="fc bfc" id="L68" title="All 6 branches covered.">        return (year % 400 == 0)</span>
+                || (year % 4 == 0 &amp;&amp; year % 100 != 0);
+    }
+
+    // 5. Kiểm tra số nguyên tố
+    public static boolean isPrime(int n) {
+<span class="fc bfc" id="L74" title="All 2 branches covered.">        if (n &lt; 2) {</span>
+<span class="fc" id="L75">            return false;</span>
+        }
+
+<span class="fc bfc" id="L78" title="All 2 branches covered.">        if (n == 2) {</span>
+<span class="fc" id="L79">            return true;</span>
+        }
+
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        if (n % 2 == 0) {</span>
+<span class="fc" id="L83">            return false;</span>
+        }
+
+<span class="fc bfc" id="L86" title="All 2 branches covered.">        for (int i = 3; i * i &lt;= n; i += 2) {</span>
+<span class="fc bfc" id="L87" title="All 2 branches covered.">            if (n % i == 0) {</span>
+<span class="fc" id="L88">                return false;</span>
+            }
+        }
+
+<span class="fc" id="L92">        return true;</span>
+    }
+
+    // 6. S = 1 - 2 + 3 - 4 + ... +/- n
+    public static int alternatingSum(int n) {
+<span class="fc bfc" id="L97" title="All 2 branches covered.">        if (n &lt; 1) {</span>
+<span class="fc" id="L98">            throw new IllegalArgumentException(&quot;n must be &gt;= 1&quot;);</span>
+        }
+
+<span class="fc" id="L101">        int sum = 0;</span>
+
+<span class="fc bfc" id="L103" title="All 2 branches covered.">        for (int i = 1; i &lt;= n; i++) {</span>
+<span class="fc bfc" id="L104" title="All 2 branches covered.">            if (i % 2 == 0) {</span>
+<span class="fc" id="L105">                sum -= i;</span>
+            } else {
+<span class="fc" id="L107">                sum += i;</span>
+            }
+        }
+
+<span class="fc" id="L111">        return sum;</span>
+    }
+
+    // 7. UCLN
+    public static int gcd(int a, int b) {
+<span class="fc" id="L116">        a = Math.abs(a);</span>
+<span class="fc" id="L117">        b = Math.abs(b);</span>
+
+<span class="fc bfc" id="L119" title="All 4 branches covered.">        if (a == 0 &amp;&amp; b == 0) {</span>
+<span class="fc" id="L120">            throw new IllegalArgumentException(&quot;a and b cannot both be 0&quot;);</span>
+        }
+
+<span class="fc bfc" id="L123" title="All 2 branches covered.">        while (b != 0) {</span>
+<span class="fc" id="L124">            int temp = b;</span>
+<span class="fc" id="L125">            b = a % b;</span>
+<span class="fc" id="L126">            a = temp;</span>
+<span class="fc" id="L127">        }</span>
+
+<span class="fc" id="L129">        return a;</span>
+    }
+
+    // Hàm giai thừa
+    public static long factorial(int n) {
+<span class="fc bfc" id="L134" title="All 2 branches covered.">        if (n &lt; 0) {</span>
+<span class="fc" id="L135">            throw new IllegalArgumentException(&quot;n must be &gt;= 0&quot;);</span>
+        }
+
+<span class="fc" id="L138">        long result = 1;</span>
+
+<span class="fc bfc" id="L140" title="All 2 branches covered.">        for (int i = 1; i &lt;= n; i++) {</span>
+<span class="fc" id="L141">            result *= i;</span>
+        }
+
+<span class="fc" id="L144">        return result;</span>
+    }
+
+    // 8. S = 1! + 2! + ... + n!
+    public static long factorialSum(int n) {
+<span class="fc bfc" id="L149" title="All 4 branches covered.">        if (n &lt; 1 || n &gt; 20) {</span>
+<span class="fc" id="L150">            throw new IllegalArgumentException(&quot;n must be from 1 to 20&quot;);</span>
+        }
+
+<span class="fc" id="L153">        long sum = 0;</span>
+
+<span class="fc bfc" id="L155" title="All 2 branches covered.">        for (int i = 1; i &lt;= n; i++) {</span>
+<span class="fc" id="L156">            sum += factorial(i);</span>
+        }
+
+<span class="fc" id="L159">        return sum;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

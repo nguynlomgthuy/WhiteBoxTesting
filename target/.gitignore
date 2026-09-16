@@ -1,0 +1,4 @@
+target/
+jacoco.exec
+.idea/
+*.iml
