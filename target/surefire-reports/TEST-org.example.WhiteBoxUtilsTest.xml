@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="org.example.WhiteBoxUtilsTest" time="0.297" tests="42" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="org.example.WhiteBoxUtilsTest" time="0.291" tests="42" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="25"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/25.0.4+1-ms/lib"/>
-    <property name="sun.java.command" value="/workspaces/Ki-m-th-h-p-tr-ng/target/surefire/surefirebooter-20260916094647995_3.jar /workspaces/Ki-m-th-h-p-tr-ng/target/surefire 2026-09-16T09-46-47_774-jvmRun1 surefire-20260916094647995_1tmp surefire_0-20260916094647995_2tmp"/>
+    <property name="sun.java.command" value="/workspaces/Ki-m-th-h-p-tr-ng/target/surefire/surefirebooter-20260916095141699_3.jar /workspaces/Ki-m-th-h-p-tr-ng/target/surefire 2026-09-16T09-51-41_543-jvmRun1 surefire-20260916095141699_1tmp surefire_0-20260916095141699_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspaces/Ki-m-th-h-p-tr-ng/target/test-classes:/workspaces/Ki-m-th-h-p-tr-ng/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/workspaces/Ki-m-th-h-p-tr-ng/target/surefire/surefirebooter-20260916094647995_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/Ki-m-th-h-p-tr-ng/target/surefire/surefirebooter-20260916095141699_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.4.1+1-LTS"/>
     <property name="user.name" value="codespace"/>
@@ -54,46 +54,46 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testInvalidMonthLower" classname="org.example.WhiteBoxUtilsTest" time="0.066"/>
-  <testcase name="testQuadraticInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.005"/>
-  <testcase name="testOddPrime" classname="org.example.WhiteBoxUtilsTest" time="0.005"/>
-  <testcase name="testFactorialSumInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
-  <testcase name="testFactorialZero" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
+  <testcase name="testInvalidMonthLower" classname="org.example.WhiteBoxUtilsTest" time="0.079"/>
+  <testcase name="testQuadraticInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testOddPrime" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
+  <testcase name="testFactorialSumInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testFactorialZero" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
   <testcase name="testAlternatingSumInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testGcdBothZero" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
-  <testcase name="testFebruaryNormal" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testRectangleAreaValid" classname="org.example.WhiteBoxUtilsTest" time="0.007"/>
-  <testcase name="testGcdFirstNumberZero" classname="org.example.WhiteBoxUtilsTest" time="0.0"/>
-  <testcase name="testQuadraticOneRoot" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testFactorialSumOverLimit" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testGcdBothZero" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testFebruaryNormal" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
+  <testcase name="testRectangleAreaValid" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testGcdFirstNumberZero" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testQuadraticOneRoot" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testFactorialSumOverLimit" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
   <testcase name="testPrimeLoopFalseBranch" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testFactorialInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testFactorialSumThree" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
-  <testcase name="testRectanglePerimeterValid" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
-  <testcase name="testGcdZero" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testLeapYearDivisibleBy400" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
-  <testcase name="testAlternatingSumEven" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testQuadraticNoRoot" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testFebruaryLeap" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testRectanglePerimeterInvalidWidth" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
-  <testcase name="testYearDivisibleBy100ButNot400" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testAlternatingSumOdd" classname="org.example.WhiteBoxUtilsTest" time="0.0"/>
+  <testcase name="testFactorialInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testFactorialSumThree" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testRectanglePerimeterValid" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
+  <testcase name="testGcdZero" classname="org.example.WhiteBoxUtilsTest" time="0.0"/>
+  <testcase name="testLeapYearDivisibleBy400" classname="org.example.WhiteBoxUtilsTest" time="0.005"/>
+  <testcase name="testAlternatingSumEven" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testQuadraticNoRoot" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testFebruaryLeap" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
+  <testcase name="testRectanglePerimeterInvalidWidth" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testYearDivisibleBy100ButNot400" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testAlternatingSumOdd" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
   <testcase name="testAlternatingSumOne" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testQuadraticTwoRoots" classname="org.example.WhiteBoxUtilsTest" time="0.0"/>
-  <testcase name="testOddNotPrime" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
+  <testcase name="testQuadraticTwoRoots" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testOddNotPrime" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
   <testcase name="test30Days" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="test31Days" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testGcdNormal" classname="org.example.WhiteBoxUtilsTest" time="0.006"/>
+  <testcase name="test31Days" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testGcdNormal" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
   <testcase name="testRectanglePerimeterInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testPrimeLessThan2" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
+  <testcase name="testPrimeLessThan2" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
   <testcase name="testInvalidMonth" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
   <testcase name="testGcdNegative" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
   <testcase name="testEvenNotPrime" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testPrime2" classname="org.example.WhiteBoxUtilsTest" time="0.005"/>
-  <testcase name="testRectangleAreaInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testPrime2" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testRectangleAreaInvalid" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
   <testcase name="testRectanglePerimeterZero" classname="org.example.WhiteBoxUtilsTest" time="0.0"/>
-  <testcase name="testFactorialNormal" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testRectangleAreaInvalidWidth" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
-  <testcase name="testConstructor" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
-  <testcase name="testFactorialSumOne" classname="org.example.WhiteBoxUtilsTest" time="0.002"/>
+  <testcase name="testFactorialNormal" classname="org.example.WhiteBoxUtilsTest" time="0.004"/>
+  <testcase name="testRectangleAreaInvalidWidth" classname="org.example.WhiteBoxUtilsTest" time="0.003"/>
+  <testcase name="testConstructor" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
+  <testcase name="testFactorialSumOne" classname="org.example.WhiteBoxUtilsTest" time="0.001"/>
 </testsuite>

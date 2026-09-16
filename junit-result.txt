@@ -1,0 +1,62 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< org.example:WhiteBoxTesting >---------------------
+[INFO] Building WhiteBoxTesting 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ WhiteBoxTesting ---
+[INFO] Deleting /workspaces/Ki-m-th-h-p-tr-ng/target
+[INFO] 
+[INFO] --- jacoco:0.8.12:prepare-agent (default) @ WhiteBoxTesting ---
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/workspaces/Ki-m-th-h-p-tr-ng/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ WhiteBoxTesting ---
+[INFO] skip non existing resourceDirectory /workspaces/Ki-m-th-h-p-tr-ng/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ WhiteBoxTesting ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug target 8] to target/classes
+[WARNING] bootstrap class path is not set in conjunction with -source 8
+  not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+    --release 8 is recommended instead of -source 8 -target 8 because it sets the bootstrap class path automatically
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ WhiteBoxTesting ---
+[INFO] skip non existing resourceDirectory /workspaces/Ki-m-th-h-p-tr-ng/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ WhiteBoxTesting ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug target 8] to target/test-classes
+[WARNING] bootstrap class path is not set in conjunction with -source 8
+  not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+    --release 8 is recommended instead of -source 8 -target 8 because it sets the bootstrap class path automatically
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- surefire:3.5.0:test (default-test) @ WhiteBoxTesting ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.example.WhiteBoxUtilsTest
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 s -- in org.example.WhiteBoxUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.12:report (report) @ WhiteBoxTesting ---
+[INFO] Loading execution data file /workspaces/Ki-m-th-h-p-tr-ng/target/jacoco.exec
+[INFO] Analyzed bundle 'WhiteBoxTesting' with 1 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.012 s
+[INFO] Finished at: 2026-09-16T09:51:43Z
+[INFO] ------------------------------------------------------------------------
