@@ -40,3 +40,19 @@ Các test case kiểm tra:
 
 ```bash
 mvn clean test
+
+## Kết quả kiểm thử
+
+### JUnit
+
+![JUnit Result](images/junit-result.png)
+
+### JaCoCo Coverage
+
+![JaCoCo Coverage](images/jacoco-coverage.png)
+
+Kết quả:
+
+- 100% Statement / Instruction Coverage
+- 100% Branch Coverage
+- Tất cả test case đều chạy thành công
