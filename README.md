@@ -56,3 +56,15 @@ Kết quả:
 - 100% Statement / Instruction Coverage
 - 100% Branch Coverage
 - Tất cả test case đều chạy thành công
+
+## Danh sách Test Case
+
+Danh sách chi tiết các trường hợp kiểm thử:
+
+[TEST_CASES.md](TEST_CASES.md)
+
+## Log kết quả JUnit
+
+Kết quả chạy JUnit:
+
+[junit-result.txt](junit-result.txt)
